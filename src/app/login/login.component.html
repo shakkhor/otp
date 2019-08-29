@@ -1,0 +1,43 @@
+<h1 style="text-align:center">
+  Welcome to OTP Attack
+</h1>
+<div class="login">
+  <h2 class="login-header">What's the secret?</h2>
+  <form [formGroup]="loginForm" class="login-container" (ngSubmit)="login()">
+    <p [ngClass]="{ 'has-error': isSubmitted && formControls.email.errors }">
+      <input
+        type="email"
+        placeholder="secret?"
+        formControlName="email"
+        (keyup)="key()"
+      />
+    </p>
+
+    <div *ngIf="isSubmitted && formControls.email.errors" class="help-block">
+      <div *ngIf="formControls.email.errors.required">
+        Secret token is required
+      </div>
+    </div>
+    <div *ngIf="missMatch" class="help-block">
+      Secret mismatch. Try again.
+    </div>
+    <!-- <p [ngClass]="{ 'has-error': isSubmitted && formControls.password.errors }">
+      <input
+        type="password"
+        placeholder="Password"
+        formControlName="password"
+        value="1234"
+      />
+    </p>
+
+    <div *ngIf="isSubmitted && formControls.password.errors" class="help-block">
+      <div *ngIf="formControls.password.errors.required">
+        Password is required
+      </div> 
+    </div>-->
+
+    <p>
+      <input type="submit" value="Enter" />
+    </p>
+  </form>
+</div>
