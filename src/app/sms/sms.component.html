@@ -1,0 +1,71 @@
+<div class="main-container">
+  <div class="div-container">
+    <div class="container-contact1">
+      <form class="example-form" #f="ngForm" (ngSubmit)="submit(f)">
+        <div class="wrap-input1" data-validate="Name is required">
+          <input
+            class="input1"
+            required
+            pattern="[0-9]{11}"
+            ngModel
+            name="mobileNo"
+            id="mobileNo"
+            #mobileNo="ngModel"
+            matInput
+            type="tel"
+            autocomplete="off"
+            placeholder="Enter Mobile Number..."
+          />
+        </div>
+
+        <div class="wrap-input1 providerList" id="myId" #myId>
+          <mat-chip-list
+            multiple
+            id="chipList"
+            [selectable]="true"
+            #matChip
+            name="chipList"
+          >
+            <mat-chip
+              class="matChip"
+              *ngFor="let chip of providerList"
+              [selected]="chip.state"
+              (click)="chip.state=!chip.state;changeSelected('s', { id: chip.id,
+                state: chip.state})"
+            >
+              {{chip.name}}
+            </mat-chip>
+          </mat-chip-list>
+        </div>
+
+        <div class="wrap-input1 ">
+          <input
+            class="input1"
+            required
+            type="text"
+            ngModel
+            name="messageCount"
+            id="mobileNo"
+            #messageCount="ngModel"
+            matInput
+            placeholder="How many texts do you want to send?"
+            value="10000"
+            onkeypress="return isNumeric(event)"
+            maxlength="5"
+            type="tel"
+            autocomplete="off"
+          />
+        </div>
+
+        <button
+          mat-raised-button
+          class="btn-submit"
+          (click)="openSnackBar()"
+          aria-label="Show an example snack-bar"
+        >
+          Attack
+        </button>
+      </form>
+    </div>
+  </div>
+</div>

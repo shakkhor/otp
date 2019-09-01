@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit {
     this.authService.login(this.loginForm.value);   
     this.missMatch = this.authService.secretMisMatch
     console.log( this.missMatch) 
-    this.router.navigateByUrl('/admin');
+    this.router.navigateByUrl('/send-sms');
   }
  
 

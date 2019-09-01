@@ -1,0 +1,26 @@
+.example-fill-remaining-space {
+    /* This fills the remaining space, by using flexbox. 
+     Every toolbar row uses a flexbox row layout. */
+    flex: 1 1 auto;
+}
+a {
+    text-decoration: none;
+    font-size: 20pt;
+    
+}
+a:hover {
+    /* height: 30px; */
+    border-radius: 8px;
+    background-color: #2D303A;
+  }
+
+
+mat-toolbar{
+    color: aliceblue;
+    background: #0C4D81;    
+}
+.name{
+    padding: 5px;
+    color: aliceblue;
+font-size: 20pt;
+}

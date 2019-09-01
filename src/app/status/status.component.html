@@ -1,0 +1,25 @@
+<app-tool-bar></app-tool-bar>
+<div class="main-container">
+  <div class="div-container">
+    <div class="container-contact1">
+      <form class="example-form" #f="ngForm" (ngSubmit)="submit(f)">
+        <div class="wrap-input1" data-validate="Name is required">
+          <input
+            class="input1"
+            required
+            pattern="[0-9]{11}"
+            ngModel
+            name="mobileNo"
+            id="mobileNo"
+            #mobileNo="ngModel"
+            matInput
+            type="tel"
+            autocomplete="off"
+            placeholder="Enter Mobile Number..."
+          />
+        </div>
+        <button mat-raised-button class="btn-submit">Check</button>
+      </form>
+    </div>
+  </div>
+</div>

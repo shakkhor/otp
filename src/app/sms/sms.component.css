@@ -1,0 +1,144 @@
+
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+
+.example-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.example-container>* {
+    width: 100%;
+}
+
+.div-container{
+    margin: 7% 30% 0% 30%;
+    align-items: center;
+    padding: 0 2%;
+    /* background-color:rgb(114, 44, 44); */
+}
+
+.btn-submit{
+    margin: 20px 0;
+    background-color: rgba(0, 0, 255, 0.61);
+}
+
+
+
+.contact1 {
+    width: 100%;
+    min-height: 80%;
+    padding: 15px;
+  
+    background: #009bff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-contact1 {
+  background: #2D303A;
+  border-radius: 10px;
+  overflow: hidden;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 90px 130px 40px 148px;
+}
+
+input.input1 {
+    height: 50px;
+    border-radius: 2px;
+    padding: 0 30px;
+    font-family: Montserrat-Regular
+  }
+
+input {
+	outline: none;
+	border: none;
+}
+
+.wrap-input1 {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 20px;
+  }
+  
+
+  .input1 {
+    display: block;
+    width: 100%;
+    background-color: #e6e6e6;
+    font-family: Montserrat-Bold;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #000208
+  }
+
+
+.mat-chip.mat-standard-chip.mat-chip-selected.mat-primary {
+  background-color:rgb(255, 153, 0);
+  color: #000000;
+  
+}
+
+.mat-chip{
+  color: #e6e6e6;
+  background-color: #444857;
+}
+
+.mat-standard-chip {
+  transition: box-shadow 280ms cubic-bezier(.4,0,.2,1);
+  display: inline-flex;
+  padding: 7px 12px;
+  border-radius: 5px;
+  align-items: center;
+  cursor: default;
+  min-height: 32px;
+  height: 1px;
+}
+
+.row{
+  margin:20px auto;
+}
+
+.err{
+  border: solid 2px #c80000;
+}
+
+.btn-submit{
+  text-decoration: none;
+  color: #e6e6e6;
+  background-color: #444857
+}
+.btn-submit:active{
+  text-decoration: none;
+}
+
+.main-container{
+  /* background-color: #131418; */
+}
+
+.providerList{
+  background-color: #2D303A;
+  padding: 10px;
+  border-radius: 5px;
+}
