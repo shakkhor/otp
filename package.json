@@ -23,7 +23,7 @@
     "@angular/router": "~8.2.0",
     "angular-particle-effect-button": "0.0.42",
     "bootstrap": "^4.3.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "rxjs": "~6.4.0",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"
